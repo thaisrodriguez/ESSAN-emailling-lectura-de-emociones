@@ -148,6 +148,60 @@
 }
 
     /* MOBILE STYLES */
+ /* responsive styles */
+@media only screen and (max-width: 600px) { 
+
+/* global styles */
+.hide{ display:none !important; display:none;}
+.blockwrap{ display:block !important; }
+.showme{ display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important;}
+*[class].movedown{ display: table-footer-group !important;}
+*[class].moveup{ display: table-header-group !important; }
+  
+/* font styles */
+*[class].textright{ text-align: right !important; }
+*[class].textleft{ text-align: left !important; }
+*[class].textcenter{ text-align: center !important; }
+*[class].font27{ font-size: 27px !important; font-weight:normal !important; line-height:27px !important; }
+  
+/* width and heights */
+*[class].hX{ height:Xpx !important; }
+*[class].wX{ width:Xpx !important; }
+
+}
+
+			@media all and ( max-width: 600px )
+
+			{
+
+			
+
+				*[id]#wrapper + table,
+
+				*[class].container,
+
+				*[class].menu
+
+				{
+
+					min-width: 0 !important;
+
+			
+
+					-moz-text-size-adjust: none;
+
+					-ms-text-size-adjust: none;
+
+					-webkit-text-size-adjust: none;
+
+			
+
+					width: 100% !important;
+
+				}
+			}
+
+			
     @media screen and (max-width: 525px) {
 		.imagen-background {
 	background-image: url(http://www.esan.edu.pe/mails/eventos/2016/kyriacos-tp-2016/img/cursores-background.png);
@@ -186,7 +240,7 @@
 
         /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
         .padding {
-          padding: 0px 5% 15px 5% !important;
+          /*padding: 0px 5% 15px 5% !important;*/
         }
 
         .padding-meta {
@@ -195,7 +249,7 @@
         }
 
         .padding-copy {
-     		padding: 10px 5% 10px 5% !important;
+     		/*padding: 10px 5% 10px 5% !important;*/
           text-align: center;
         }
 		.padding-copy-left {
@@ -391,22 +445,22 @@
 </head>
 <body style="margin: 0 !important;padding: 0 !important;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;height: 100% !important;width: 100% !important;">
 
-  
+ <div id="wrapper" style="background-color: #FFFFFF;">
  
-<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top-color: #d4304d;border-style: solid;border-top-width: medium;border-top-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-bottom-color: #dadada;border-left-width: 0px;border-right-width: 0px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;" class="section-padding">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top-color: #d4304d;border-style: solid;border-top-width: medium;border-top-style: solid;border-bottom-width: 0px;border-bottom-style: solid;border-bottom-color: #dadada;border-left-width: 0px;border-right-width: 0px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;table-layout: fixed;" class="section-padding">
 <tbody>
    <tr>
-     <td bgcolor="#034c82" align="center" class="section-padding imagen-background" style="padding: 10px 15px 40px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-image: url(img/fondo-lectura-de-emociones.png);background-repeat: no-repeat;background-attachment: fixed;background-position: center center;background-size: cover;max-width: 100%;height: auto;color: #060;">
+     <td bgcolor="#034c82" align="center" class="section-padding imagen-background" style="padding: 10px 15px 40px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-image: url('https://www.esan.edu.pe/mails/eventos/2017/lect-emociones/vs2/img/fondo.png');background-repeat: no-repeat;background-attachment: fixed;background-position: center center;background-size: cover;max-width: 100%;height: auto;color: #060;">
        <!--[if (gte mso 9)|(IE)]>
             <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
             <tr>
             <td align="center" valign="top" width="500">
             <![endif]-->
-       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;" class="responsive-table">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;" class="responsive-table">
          <tr>
            <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
              <!-- HERO IMAGE -->
-             <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+             <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
                <tr>
                  <td align="center" class="padding" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #7e682e;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                    
@@ -417,17 +471,17 @@
                    
                    
                    <!-- COPY -->
-                   <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #7e682e;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                   <table  width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #7e682e;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
                      <tr>
                        <td align="left" style="font-size: 40px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; padding-top: 15px;" class="padding-copy"><p style="margin-bottom:5px;"><img alt="Logo" src="http://www.esan.edu.pe/mails/diplomas/2017/bum/img/logo-ee-blanco.png" width="250" height="66" style="display: block;font-family: Helvetica, Arial, sans-serif;color: #ffffff;font-size: 16px;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;" border="0"><br>
                        <p style="font-size: 33px; margin-top: 38px; text-align: center;"><strong>La Lectura de las Emociones y la Detección de la Mentira</strong><br>
 
                        </p>
                        <p style="font-size: 18px; margin-top: 38px; text-align: center;">
-                       <img width="250" src="img/owit.png" /><br/>
+                       <img width="250" src="https://www.esan.edu.pe/mails/eventos/2017/lect-emociones/vs2/img/owit.png" /><br/>
                        En alianza con OWIT
                        </p>
-                         <table align="center" border="0" cellpadding="0" cellspacing="0" width="200px" style="max-width: 200px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; color: #;">
+                         <table align="center" border="0" cellpadding="0" cellspacing="0" width="200px" style="max-width: 200px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; border-collapse: collapse;border-spacing: 0;">
                            <tr bgcolor="#27AE60">
                              <td align="center" bgcolor="#181818" class="padding" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #FFF; line-height: 20px; padding: 10px; margin-bottom: 5px;"><a href="https://www.esan.edu.pe/eventos/2017/08/16/la-lectura-de-las-emociones-y-la-deteccion-de-la-mentira-2/" target="_blank">Más información</a></td>
                            </tr>
@@ -466,14 +520,14 @@
             
             
             
-        <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
                 <tbody><tr>
                     <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
                             <tbody><tr>
                                 <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                     <!-- COPY -->
-                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0; ">
                       <tbody><tr></tr>
                      
                       
@@ -495,7 +549,7 @@
                     </td>
                 </tr>
         </tbody></table>
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 20px; max-width: 500px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #090; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" class="responsive-table">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 20px; max-width: 600px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #090; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;border-spacing: 0;" class="responsive-table">
           <!-- TITLE -->
                 
           <tr>
@@ -513,7 +567,7 @@
 
 
 
-<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px;margin-top: 10px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #b3ae94;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;" class="responsive-table">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;margin-top: 10px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #b3ae94;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;" class="responsive-table">
                 <tr>
                     <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                   <!-- TITLE SECTION AND COPY --></td>
@@ -531,7 +585,7 @@
                         <![endif]-->
                         
                         
-                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 20px; max-width: 500px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #090; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" class="responsive-table">
+                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 20px; max-width: 600px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #090; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;border-spacing: 0;" class="responsive-table">
             <!-- TITLE -->
                 
             
@@ -547,7 +601,7 @@
             <tr>
                     <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                         <!-- TITLE SECTION AND COPY -->
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; color: #b3ae94;"> 
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; color: #b3ae94;border-collapse: collapse;border-spacing: 0;"> 
                             <tr bgcolor="#b3ae94">
                                 <td align="center" bgcolor="#b3ae94" class="padding" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #FFF; line-height: 30px; padding: 10px; margin-bottom: 5px;">Expositor: Ing. José Luis Cañavate</td>
                        </tr>
@@ -562,34 +616,34 @@
                                     <tr>
                                     <td align="left" valign="top" width="240">
                                     <![endif]-->
-                                    <div style="display:inline-block; max-width:30%; min-width:500px; vertical-align:top; width:100%;" class="wrapper">
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500px;" class="wrapper">
+                                    <div style="display:inline-block; max-width:30%; min-width:600px; vertical-align:top; width:100%;" class="wrapper">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;border-collapse: collapse;border-spacing: 0;" class="wrapper">
                                             <tr>
                                                 <td align="center" valign="top">
-                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;">
                                                     	<tr>
                                                             <td style="padding: 20px 0 30px 0;">
                                                               <div align="center">
-                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
                                                                   <tbody><tr>
                                                                     <td align="center" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                                                       <!-- COPY -->
-                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
                             <tbody><tr>
                                 <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                                     <!-- COPY -->
-                      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+                      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
                       <tbody><tr></tr>
                      
                       
                                         
                                         <tr>
                                         	<td width="30%" align="center" style="padding: 5 0 0 0; font-size: 12px; line-height: 12px; font-family: Helvetica, Arial, sans-serif; color: #333333; text-align: justify; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="padding-copy">
-                                        		<img src="img/expositor.jpg" width="100%" />
+                                        		<img src="https://www.esan.edu.pe/mails/eventos/2017/lect-emociones/vs2/img/expositor.jpg" width="100%" />
 
                                         	</td>
-                                            <td width="50%" align="center" style="padding: 5 0 0 10;font-size: 12px;line-height: 13px;font-family: Helvetica, Arial, sans-serif;color: #333333;text-align: justify;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">
-                                              <p>
+                                            <td width="50%" align="center" style="padding: 5 0 0 10;font-size: 15px;line-height: 15px;font-family: Helvetica, Arial, sans-serif;color: #333333;text-align: justify;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="padding-copy">
+                                              <p style="padding-left: 10px;">
                                                 Urbanista e Ingeniero. Master en Comportamiento No Verbal y Detección de Mentira (UCJC). Master en Intervención Criminológica (UMH). Master en Perfilacion de Personalidad y en Negociación (UDIMA). Doctorando en Derecho y Sociedad (UDIMA). Investigador en Fundación Behavior & Law, sobre Técnicas en Predicción del Delito. Actualmente es coordinador de la Fundación para América Latina.  Experto en Liderar Procesos de Negociación en Procesos Urbanos. Más de 30 años de experiencia en gestión de procesos de comunicación y negociación en ciudades y con más de 100 proyectos realizados en Europa y América del Sur. Conferenciante y Comunicador sobre comportamiento y crimen, conducta y relaciones humanas. Presidente del Comité Científico de la Fundación Ciudad Formador en Comunicación No Verbal, Detección de la Mentira y Perfilacion de la Personalidad aplicado a Negociación en diferentes ámbitos forenses, policía, CIFSE, en varios países americanos y europeos.
                                                 
 
@@ -625,7 +679,7 @@
                          <tr>
                     <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                         <!-- TITLE SECTION AND COPY -->
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; color: #b3ae94;"> 
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; color: #b3ae94;border-collapse: collapse;border-spacing: 0;"> 
                             <tr bgcolor="#b3ae94">
                                 <td align="center" bgcolor="#b3ae94" class="padding" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #FFF; line-height: 30px; padding: 10px; margin-bottom: 5px;">Temas de importancia</td>
                        </tr>
@@ -641,13 +695,13 @@
                                     <td align="left" valign="top" width="240">
                                     <![endif]-->
                                     <div style="display:inline-block; max-width:40%; min-width:140px; vertical-align:top; width:100%;" class="wrapper">
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:140px;" class="wrapper">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:140px;border-collapse: collapse;border-spacing: 0;" class="wrapper">
                                             <tr>
                                                 <td align="center" valign="top">
                                                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     	<tr>
                                                             <td style="padding: 20px 0 30px 0;">
-                                                              <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse;border-spacing: 0;">
                                                                     <tr>
                                                                         <td align="center" valign="middle"><img src="https://www.esan.edu.pe/mails/eventos/2017/des-gestion-emociones/img/conocimiento.png" width="60" height="60" style="display: block;" alt="Fluid images" border="0"></td>
                                                                   </tr>
@@ -673,7 +727,7 @@
                                     <td align="right" valign="top" width="240">
                                     <![endif]-->
                                     <div style="display:inline-block; max-width:40%; min-width:150px; vertical-align:top; width:100%;" class="wrapper">
-                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="border-collapse: collapse;border-spacing: 0;">
                                             <tr>
                                                 <td>
                                                     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:150px; float: left;" class="wrapper">
@@ -739,7 +793,7 @@
                                  <tr>
                     <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                         <!-- TITLE SECTION AND COPY -->
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; color: #b3ae94;"> 
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; color: #b3ae94;"> 
                             <tr bgcolor="#b3ae94">
                                 <td align="center" bgcolor="#b3ae94" class="padding" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; color: #FFF; line-height: 30px; padding: 10px; margin-bottom: 5px;">Más información del evento</td>
                        </tr>
@@ -889,7 +943,7 @@
                                      
                                                                 
                                     
-                         <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 20px; max-width: 500px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #090; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" class="responsive-table">
+                         <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 20px; max-width: 600px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #090; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" class="responsive-table">
             <!-- TITLE -->
                 
             
@@ -933,7 +987,7 @@
                                             <td align="center" style="font-size: 20px;font-family: Helvetica, Arial, sans-serif;color: #666666;-webkit-text-size-adjust: 100%;padding: 10px;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">Nuestros reconocimientos</td>
                       </tr>
                                         <tr>
-                                            <td align="center" style="font-size: 16px;line-height: 25px;font-family: Helvetica, Arial, sans-serif;color: #878787;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><img src="http://www.esan.edu.pe/img/laureles-esan-vs6.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></td>
+                                            <td align="center" style="font-size: 16px;line-height: 25px;font-family: Helvetica, Arial, sans-serif;color: #878787;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><img src="http://www.esan.edu.pe/img/laureles-esan-vs6.png" style="-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;width: 100%"></td>
                                         </tr>
                   </table>
                   
@@ -988,7 +1042,7 @@ E-mail: <a href="mailto:kfloresg@esan.edu.pe" style="-webkit-text-size-adjust: 1
             <tr>
             <td align="center" valign="top" width="500">
             <![endif]-->
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px;" class="responsive-table">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" class="responsive-table">
                 <tbody><tr>
                     <td>
                         <!-- TITLE SECTION AND COPY -->
@@ -1073,7 +1127,7 @@ E-mail: <a href="mailto:kfloresg@esan.edu.pe" style="-webkit-text-size-adjust: 1
             <td align="center" valign="top" width="500">
             <![endif]-->
             <!-- UNSUBSCRIBE COPY -->
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 500px;" class="responsive-table">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 600px;" class="responsive-table">
                 <tbody><tr>
                     <td align="center" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color:#FFF;">Alonso de Molina 1652, Monterrico, Surco, Lima - Perú<br>
                       Telf.: (511) 317-7200 <br>
@@ -1095,5 +1149,6 @@ Si no deseas recibir nuestros correos <a href="[UNSUBSCRIBE]" target="_blank" st
         </td>
     </tr>
 </table>
+</div>
 </body>
 </html>
